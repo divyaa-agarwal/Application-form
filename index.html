@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APPLICATION FORM</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/> 
+    </head>
+    <body>
+        <div class="header">
+            <div class="heading">
+                    <h1>Application Form <span class="web">(web)</span></h1>
+                </div>
+        </div>
+        <div class="main">
+            <div class="box">
+                <div class="personal-details">
+                    <i class="ri-user-3-line"></i>
+                    <h4>Personal Information</h4>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-control">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <div class="input-box">
+                            <i class="ri-mail-line"></i>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label>Phone Number</label>
+                        <div class="input-box">
+                            <i class="ri-phone-fill"></i>
+                            <input type="text" inputmode="numeric" maxlength="10" placeholder="+91 9678754XXX">
+                        </div>
+                    </div>
+                </div>
+                <div class="address">
+                    <label>Address</label>
+                    <input type="text" class="address-input" placeholder="Enter your address">
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>City</label>
+                        <input type="text" placeholder="Enter your city">
+                    </div>
+                    <div class="form-control">
+                        <label>Pincode</label>
+                        <input type="text" inputmode="numeric" maxlength="6" placeholder="Enter your pincode">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>Date of Birth</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-control">
+                        <label>Upload CV</label>
+                        <input class="CV" type="file">
+                    </div>
+                </div>    
+                <div class="checkboxes">
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="personal-details">
+                    <i class="ri-lock-line"></i>
+                    <h4>Account Security</h4>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>Enter Password</label>
+                        <div class="input-box">
+                            <input type="password" placeholder="Enter your password">
+                            <i class="ri-eye-fill"></i>
+                        </div>
+                    </div>    
+                    <div class="form-control">
+                        <label>Confirm Password</label>
+                        <div class="input-box">
+                            <input type="password" placeholder="Confirm your password">
+                            <i class="ri-eye-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>Security Question</label>
+                        <select>
+                            <option value="">Select a question</option>
+                            <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+                            <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+                            <option value="What is your favorite color?">What is your favorite color?</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Answer</label>
+                        <input type="text" placeholder="Enter your answer">
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="personal-details">
+                    <i class="ri-briefcase-line"></i>
+                    <h4>Professional Information</h4>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>Job Role</label>
+                        <select>
+                            <option value="frontend">Select Job Role</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="fullstack">Fullstack Developer</option>
+                            <option value="uiux">UI/UX Designer</option>
+                            <option value="devops">DevOps Engineer</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Experience Level</label>
+                        <select>
+                            <option value="">Select Experience</option>
+                            <option value="Fresher">Fresher</option>
+                            <option value="Intern">Internships Experience</option>
+                            <option value="Junior">Junior (0-2 years)</option>
+                            <option value="Mid">Mid-level (3-4 years)</option>
+                            <option value="Senior">Senior (4-5 years)</option>
+                            <option value="Expert">Expert (5+ years)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-control">
+                        <label>Expected Salary</label>
+                        <div class="salary-box">
+                            <input type="text" placeholder="Enter expected salary">
+                            <select>
+                                <option value="INR">INR</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label>Notice Period</label>
+                        <select>
+                            <option value="">Select Notice Period</option>
+                            <option value="Immediate">Immediate</option>
+                            <option value="15days">15 Days</option>
+                            <option value="30days">30 Days</option>
+                            <option value="60days">60 Days</option>
+                            <option value="90days">90 Days</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="personal-details">
+                    <i class="ri-user-3-line"></i>
+                    <h4>Profile Picture</h4>
+                </div>
+                <div class="form-control">
+                    <label>Upload Profile Picture</label>
+                    <div class="upload-box">
+                        <i class="ri-image-add-line"></i>
+                        <p>Drag and drop your profile picture here</p>
+                        <span>or</span>
+                        <label for="profile-picture" class="upload-button">Browse</label>
+                        <input type="file" id="profile-picture" accept="image/*">
+                    </div>
+                </div>
+                <div class="personal-details">
+                    <i class="ri-file-text-line"></i>
+                    <h4>Upload Resume</h4>
+                </div>
+                <div class="form-control">
+                    <label>Upload Resume</label>
+                    <div class="upload-box">
+                        <i class="ri-image-add-line"></i>
+                        <p>Drag and drop your resume here</p>
+                        <span>or</span>
+                        <label for="resume" class="upload-button">Browse</label>
+                        <input type="file" id="resume" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-info">
+            <div class="box3">
+                box3
+            </div>
+        </div>
+    </body>
+</html>
