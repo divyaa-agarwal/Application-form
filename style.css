@@ -13,7 +13,7 @@ html,body {
     #0b0b12); 
   
 }
-.main{
+.main,.skills-info{
     width: 100%;
     min-height: 100vh;
     display:flex;
@@ -84,6 +84,7 @@ html,body {
 }
 .form-control{
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 10px;
     margin: 20px;
@@ -91,7 +92,7 @@ html,body {
 }
 input{
     padding: 5px;
-    width: 250px;
+    width: 100%;
     transition: all 0.3s ease-in-out;
     background:#11111A;
     transition: border 0.3s;
@@ -104,7 +105,7 @@ input[type="radio"]{
 }
 select{
     padding: 5px;
-    width:250px;
+    width:100%;
     /* transition: all 0.3s ease-in-out;   
     background: transparent */
     background: #11111A;
@@ -124,7 +125,7 @@ select{
 }
 .address-input{
     padding: 5px;
-    width: 560px;
+    width: 100%;
     height: 100px;
 }    
 .CV{
@@ -175,9 +176,8 @@ button:hover{
     padding-left: 10px;
 }
 .upload-box{
-    width: 560px;
+    width: 100%;
     height: 220px;
-    background:#11111A;
     background-color: #1d1d2b;
     border: 2px dashed #4f46e5;
     border-radius: 12px;
@@ -244,4 +244,157 @@ input:focus,select:focus{
 }
 input[type="file"]{
     background:#11111A;
+}
+.box3,.box4{
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #2A2A3A;
+    min-height: 330px;
+    border-radius: 18px;
+    box-shadow:0px 8px 25px rgba(0,0,0,0.35);
+    background:#171722;
+}
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+.skill-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: #1d1d2b;
+    border: 1px solid #2A2A3A;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.skill-item:hover{
+    border-color: #6c5ce7;
+    background: #232338;
+}
+.skill-item input{
+    width: auto;
+    accent-color: #6c5ce7;
+    /* display: none; */
+}
+.skill-item span{
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #2A2A3A;
+    border-radius: 30px;
+    background: #1d1d2b;
+    color: #c7c7d3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.skill-item:hover span{
+    border-color: #6c5ce7;
+    box-shadow: 0 0 15px rgba(108,92,231,0.25);
+}
+.skill-item input:checked + span{
+    background: #6c5ce7;
+    color: white;
+    border-color:#6c5ce7;
+    box-shadow: 0 0 20px rgba(108,92,231,0.45);
+}
+.termcondition{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+.termcondition input{
+    width: 18px;
+    height: 18px;
+    accent-color:#6c5ce7;
+    cursor: pointer;
+}
+.termcondition label{
+    color: #c7c7d3;
+    cursor: pointer;
+    line-height: 1.5;
+}
+.termcondition a{
+    text-decoration:underline;
+    text-decoration-color:#6c5ce7;
+    text-underline-offset: 4px;
+    text-decoration-thickness:2px ;
+    color: #8d7bff;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #b4a7ff;
+    text-decoration: underline;
+}
+.button-group{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 30px 20px;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reset-btn{
+    background: transparent;
+    color: #C7C7D3;
+    border: 1px solid #3C3C54;
+}
+
+.reset-btn:hover{
+    background: #232338;
+    border-color: #6c5ce7;
+    color: #F5F5FA;
+}
+
+.submit-btn{
+    background: linear-gradient(135deg,#6c5ce7,#8b7bff);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(108,92,231,.35);
+}
+
+.submit-btn:active{
+    transform: scale(.97);
+}
+@media (max-width:900px){
+    .heading{
+        font-size: 15px;
+    }
+    .main,.skills-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .row{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .address-input,.upload-box{
+        width: 100%;
+    }
+    .heading::after{
+        width: 250px;
+    }
+    .web{
+        display: none;
+    }
 }
